@@ -8,7 +8,7 @@
 <body>
 <h2 id="main-header xzx">Todo</h2>
 <div ng-controller="TodoListController as todoList">
-    <span>{{todoList.remaining()}} of {{todoList.todos.length}} remaining</span>
+    <span id="span_id">{{todoList.remaining()}} of {{todoList.todos.length}} remaining</span>
     [ <a href="" ng-click="todoList.archive()">archive</a> ]
     <ul class="unstyled">
         <li ng-repeat="todo in todoList.todos">
